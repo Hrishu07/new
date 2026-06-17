@@ -60,7 +60,8 @@
   .memories-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.2rem; max-width: 860px; margin: 3rem auto 0; }
   .memory-card { border-radius: 14px; overflow: hidden; border: 1px solid var(--rose-light); background: white; transition: transform 0.25s, box-shadow 0.25s; }
   .memory-card:hover { transform: scale(1.03); box-shadow: 0 10px 32px rgba(181,57,74,0.13); }
-  .memory-img { width: 100%; aspect-ratio: 1; display: flex; align-items: center; justify-content: center; font-size: 3.5rem; }
+  .memory-img { width: 100%; aspect-ratio: 1; display: flex; align-items: center; justify-content: center; font-size: 3.5rem; overflow: hidden; }
+  .memory-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
   .memory-img.c1{background:#fde8ec} .memory-img.c2{background:#e8f0fd} .memory-img.c3{background:#fdf4e8} .memory-img.c4{background:#e8fde8}
   .memory-body { padding: 1rem 1.1rem 1.2rem; }
   .memory-body h4 { font-family: var(--font-display); font-size: 1.1rem; font-weight: 600; color: var(--dark); margin-bottom: 0.3rem; }
@@ -135,13 +136,13 @@
     </div>
     <div class="note-card">
       <div class="note-icon">💛</div>
-      <h3>Your presesnce</h3>
-      <p>The way that we be presesnt with each other and every single moment we speand with each other, is a very precious thing for me. You just brings me happiness and comfort, you are my comfort place. and i am very very ahppy to have you around and will always be happy </p>
+      <h3>Your presence</h3>
+      <p>The way that we be present with each other and every single moment we spend with each other, is a very precious thing for me. You just bring me happiness and comfort, you are my comfort place and I am very very happy to have you around and will always be happy.</p>
     </div>
     <div class="note-card">
       <div class="note-icon">🌙</div>
-      <h3>endless talks talks</h3>
-      <p>Those conversations where we used— talking about everything and nothing — are some of my most treasured moments. And i adore every conversation of ours in the admin block, in PID everywhere.</p>
+      <h3>Endless talks</h3>
+      <p>Those conversations where we lose track of time — talking about everything and nothing — are some of my most treasured moments. I adore every conversation of ours in the admin block, in PID, everywhere.</p>
     </div>
     <div class="note-card">
       <div class="note-icon">🌹</div>
@@ -151,25 +152,29 @@
   </div>
 </section>
 
-<div class="memories-grid">
+<section id="memories">
+  <p class="section-label">our story</p>
+  <h2 class="section-title">Moments I <em>cherish</em></h2>
+  <div class="divider"><span></span><span>💫</span><span></span></div>
+  <div class="memories-grid">
     <div class="memory-card">
-      <div class="memory-img c1"><img src="memory1.jpeg" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div class="memory-img c1"><img src="memory1.jpeg" alt="Memory 1"></div>
       <div class="memory-body"><h4>The first time</h4><p>That moment I knew — right then and there — that you were someone truly special for me.</p></div>
     </div>
     <div class="memory-card">
-      <div class="memory-img c2"><img src="memory2.jpeg" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div class="memory-img c2"><img src="memory2.jpeg" alt="Memory 2"></div>
       <div class="memory-body"><h4>Time together</h4><p>The time we spent together, the first ever sneak out we had is the most special for me.</p></div>
     </div>
     <div class="memory-card">
-      <div class="memory-img c3"><img src="memory3.jpeg" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div class="memory-img c3"><img src="memory3.jpeg" alt="Memory 3"></div>
       <div class="memory-body"><h4>Our first gathering</h4><p>The first ever together gathering as a couple and how could i forget how beautiful you were looking like damnnnn jaannnnn.....</p></div>
     </div>
     <div class="memory-card">
-      <div class="memory-img c4"><img src="memory4.jpeg" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div class="memory-img c4"><img src="memory4.jpeg" alt="Memory 4"></div>
       <div class="memory-body"><h4>Every ordinary day</h4><p>The everyday moments with you feel extraordinary. That's the magic of you.</p></div>
     </div>
-</div>
- </section>
+  </div>
+</section>
 
 <section id="quiz">
   <p class="section-label">just for us</p>
